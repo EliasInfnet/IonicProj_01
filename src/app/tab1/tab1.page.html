@@ -12,6 +12,18 @@
       <ion-title size="large">Tab 1</ion-title>
     </ion-toolbar>
   </ion-header>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Clique no botão para mostrar o modal</ion-card-title>
+    </ion-card-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-button color="success" (click)="mostrarModal()">Mostrar modal</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>  
+  </ion-card>
 </ion-content>
+

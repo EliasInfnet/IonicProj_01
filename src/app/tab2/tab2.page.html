@@ -7,11 +7,21 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Tab de select</ion-card-title>
+      <ion-card-subtitle size="large">Valor selecionado : {{valorSelect}}</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-select placeholder="Selecione um" [(ngModel)]="valorSelect">
+        <ion-select-option value="1" >Um</ion-select-option>
+        <ion-select-option value="2" >Dois</ion-select-option>        
+        <ion-select-option value="3" >Três</ion-select-option>
+      </ion-select>
+    </ion-card-content>
+  </ion-card>
+
+
 </ion-content>
