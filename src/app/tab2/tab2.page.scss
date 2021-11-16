@@ -2,3 +2,18 @@
   width: 30px;
   height: 30px;
 }
+
+ion-select {
+  /* Applies to the value and placeholder color */
+  color: #000000;
+
+  background-color: #cfcfcf;
+
+  border-radius: 10px;
+
+  /* Set a different placeholder color */
+  --placeholder-color: #971e49;
+
+  /* Set full opacity on the placeholder */
+  --placeholder-opacity: 1;
+}
